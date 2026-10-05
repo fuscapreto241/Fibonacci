@@ -1,0 +1,83 @@
+:root {
+    --primary-color: #1f3c5b; /* Azul escuro principal */
+    --accent-color: rgb(243, 221, 19);  /* Vermelho de destaque/hover */
+    --bg-light: #33048b;      /* Fundo da página */
+    --bg-card: #f7f7f7;       /* Fundo dos blocos/cards */
+    --text-dark: #222;
+    --border-radius: 5px;
+    --transition-fast: 0.3s;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    text-align: center;
+}
+p {
+    line-height: 1.6;
+}
+header{
+    color:#f7f7f7; /*Cabeçalho*/
+}
+
+header, nav {
+    text-align: center;
+}
+header h1 { margin: 0; font-size: 46px; }
+header .periodo { font-size: 20px; margin: 10px 0 30px; }
+
+nav {
+    background-color: white;
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: var(--primary-color);
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+}
+
+main {
+    width: 85%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+section {
+    background-color: white;
+    margin: 10px 0 30px;
+    padding: 30px;
+    border-radius: 8px;
+}
+.Imagem-Espiral{
+    max-width: 1000px;
+    margin: 25px auto 0;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.Imagem-Espiral img{
+    width: 430px;
+    max-width: 48%;
+    height: auto;
+    border-radius: 8px;
+}
+footer{
+    color: #f7f7f7;
+}
