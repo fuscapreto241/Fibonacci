@@ -21,6 +21,7 @@ body {
 }
 p {
     line-height: 1.6;
+    color: #f7f7f7;
 }
 header{
     color:#f7f7f7; /*Cabeçalho*/
@@ -80,4 +81,19 @@ section {
 }
 footer{
     color: #f7f7f7;
+    background-color: #22035c;
+}
+
+.imagem_natureza {
+    max-width: 1000px;
+    margin: 25px auto 0;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+.imagem_natureza img{
+    width: 430px;
+    max-width: 48%;
+    height: auto;
+    border-radius: 8px;
 }
