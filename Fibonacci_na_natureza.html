@@ -7,6 +7,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <a href="Index.html">Início</a>
+            <a href="Fibonacci_na_natureza.html">Na natureza</a>
+            <a href="Origem.html">Onde surge?</a>
+            <a href="Padrões_Matemáticos.html">Padrões matemáticos</a>
+            <a href="Espiral_de_Fibonacci.html">Espiral</a>
+            <a href="Quiz.html">Quiz</a>
+        </nav>
+    </header>
+    <main>
+     <section class="natureza">
       <article class="acordeao"> <!--Fibonacci nas plantas-->
 
                 <button class="titulo-acordeao">
@@ -30,43 +42,41 @@
                         Essa organização pode favorecer o aproveitamento do espaço, 
                         mostrando como a matemática pode ajudar a interpretar fenômenos naturais.
                     </p>
+                    <div class="imagem_natureza">
+                        <img src="Imagens/A beleza matemática das plantas.png" alt="">
+                    </div>
                 </div>
-                <div class="imagem_natureza">
-                    <img src="Imagens/A beleza matemática das plantas.png" alt="">
-                </div>
+                
             </article>
       <article class="acordeao"> <!--Relação com a proporção áurea-->
                 <button class="titulo-acordeao">
                     Relação com a proporção áurea
                     <span>+</span>
                 </button>
-                <div class="equação">
-                    <img src="Imagens/equação.png" alt="equação">
-                </div>
-                <div class="conteudo-acordeao">
+                    
+                    <div class="conteudo-acordeao">
+                        <div class="equacao">
+                         <img src="Imagens/equação.png" alt="equação">
+                        </div>
 
-                    <p>
-                        Quando dividimos um número da sequência de Fibonacci pelo número anterior, 
-                        os resultados se aproximam de <b>1,618,</b> valor conhecido como <b>proporção áurea</b>.
-                    </p>
+                        <p>
+                            Quando dividimos um número da sequência de Fibonacci pelo número anterior, 
+                            os resultados se aproximam de <b>1,618,</b> valor conhecido como <b>proporção áurea</b>.
+                        </p>
 
-                    <p>
-                        Essa relação é frequentemente associada à Espiral de Fibonacci 
-                        e aparece em diversos estudos sobre formas e padrões naturais.
-                    </p>
+                        <p>
+                            Essa relação é frequentemente associada à Espiral de Fibonacci 
+                            e aparece em diversos estudos sobre formas e padrões naturais.
+                        </p>
 
-                    <p>
-                        Em questões do ENEM, essa ideia pode ser explorada por meio de razões, proporções, porcentagens, 
-                        sequências e aproximações numéricas.
-                    </p>
-
-                 </div>
-                 <div class="imagem_natureza">
-                    <img src="Imagens/Proporção Áurea nas Galáxias.png" alt="galaxia">
-
-                 </div>
-                
-
+                        <p>
+                            Em questões do ENEM, essa ideia pode ser explorada por meio de razões, proporções, porcentagens, 
+                            sequências e aproximações numéricas.
+                        </p>
+                        <div class="imagem_natureza">
+                        <img src="Imagens/Proporção Áurea nas Galáxias.png" alt="galaxia">
+                        </div>
+                    </div>
             </article>
       <article class="acordeao"> <!--Matemática para entender a natureza-->
 
@@ -94,9 +104,9 @@
                         proporções matemáticas podem aparecer nos processos naturais.
                     </p>
                         
-                    <div class="imagem_natureza">
-                        <img src="Imagens/Matemática na Natureza Submarina.png" alt="tartaruga">
-                    </div>
+                        <div class="imagem_natureza">
+                            <img src="Imagens/Matemática na Natureza Submarina.png" alt="tartaruga">
+                        </div>
                     <p>
                         <strong>Atenção para o ENEM:</strong>
                         o Tratado de Versalhes não deve ser entendido como a única
@@ -145,5 +155,12 @@
                 </div>
 
             </article>
+            <script src="script.js"></script>
+        </section>
+    </main>
+    <footer>
+        <p>Projeto Educacional - Sequência de Fibonacci</p>
+        <p>Desenvolvido pelos alunos do 3°ano A: Gabriel Marques, Davi Caetano e João Gabriel</p>
+    </footer>
 </body>
 </html>

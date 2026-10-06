@@ -21,7 +21,11 @@ body {
 }
 p {
     line-height: 1.6;
-    color: #f7f7f7;
+    color: #010000;
+}
+header .Inicio{
+    background-color: var(--bg-light);
+    color: white;
 }
 header{
     color:#f7f7f7; /*Cabeçalho*/
@@ -31,7 +35,9 @@ header, nav {
     text-align: center;
 }
 header h1 { margin: 0; font-size: 46px; }
-header .periodo { font-size: 20px; margin: 10px 0 30px; }
+
+.descricao-inicio{ 
+    color: white}
 
 nav {
     background-color: white;
@@ -53,17 +59,26 @@ nav a:hover {
     color: var(--accent-color);
 }
 
-main {
+main{
+    height: 100%;
+    border-radius: 60px;
+    background-color: grey;
     width: 85%;
     max-width: 1000px;
     margin: auto;
 }
 
 section {
-    background-color: white;
+    background-color: rgb(250, 247, 247);
     margin: 10px 0 30px;
     padding: 30px;
-    border-radius: 8px;
+    border-radius: 50px;
+}
+.natureza{
+    background-color: grey;
+    margin: 10px 0 30px;
+    padding: 30px;
+    border-radius: 50px;
 }
 .Imagem-Espiral{
     max-width: 1000px;
@@ -79,10 +94,6 @@ section {
     height: auto;
     border-radius: 8px;
 }
-footer{
-    color: #f7f7f7;
-    background-color: #22035c;
-}
 
 .imagem_natureza {
     max-width: 1000px;
@@ -96,4 +107,50 @@ footer{
     max-width: 48%;
     height: auto;
     border-radius: 8px;
+    margin:auto;
 }
+.equacao img{
+    width: 430px;
+    max-width: 48%;
+    height: auto;
+    border-radius: 8px;
+    margin:auto;
+}
+.equacao{
+     max-width: 1000px;
+    margin: 25px auto 0;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+footer {
+    background-color: #22035c;
+    min-height: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer p {
+    color: white;
+}
+article{
+    background-color: var(--bg-card);
+    padding: 20px;
+    margin-top: 20px;
+    border-left: 10px solid coral;
+    border-radius: var(--border-radius);
+    width: auto;
+}
+.titulo-acordeao{
+    width: 100%;
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+.titulo-acordeao span { font-size: 24px; }
+.conteudo-acordeao { display: none; margin-top: 15px; }
+
+
