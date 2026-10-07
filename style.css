@@ -163,3 +163,62 @@ article{
     
 }
 
+/*CSS DA PÁGIDA DE ORIGEM*/
+.texto-destaque h3 { font-size: 28px; margin: 0 0 15px; }
+.texto-destaque p { font-size: 18px; }
+.linha-tempo{
+    margin-top: 40px;
+}
+.anos{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 35px 20px 40px;
+}
+.anos::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    right: 5%;
+    height: 3px;
+    background-color: #cbd3da;
+    z-index: 0;
+}
+.anos button {
+    position: relative;
+    z-index: 1;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: white;
+    border: 3px solid var(--primary-color);
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: var(--transition-fast);
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.15);
+}
+
+.anos button:hover, .anos button.ativo {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.anos button:hover { transform: translateY(-2px); }
+.anos button.ativo { transform: scale(1.12); }
+.evento { display: none; }
+.evento h4 { font-size: 19px; }
+
+#espiral {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+    size: 0cap;
+}
+.titulo-espiral{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
