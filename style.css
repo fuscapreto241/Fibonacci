@@ -9,7 +9,6 @@
 }
 
 html {
-    height: 100%;
     scroll-behavior: smooth;
 }
 
@@ -61,9 +60,6 @@ nav a:hover {
 }
 
 main{
-    
-   
-   
     height: 100%;
     border-radius: 60px;
     background-color: grey;
@@ -129,11 +125,8 @@ section {
 }
 footer {
     background-color: #22035c;
-    min-height: 90px;
-    padding: 20px;
-    box-sizing: border-box;
+    min-height: 80px;
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: 40px;
 }
 
 footer p {
@@ -159,9 +152,6 @@ article{
 }
 .titulo-acordeao span { font-size: 24px; }
 .conteudo-acordeao { display: none; margin-top: 15px; }
-.destaque-inicio{
-    
-}
 
 /*CSS DA PÁGIDA DE ORIGEM*/
 .texto-destaque h3 { font-size: 28px; margin: 0 0 15px; }
@@ -222,3 +212,69 @@ article{
     color: white;
 }
 
+/*QUIZ*/
+/*COMPONENTE DO QUIZ E RODAPÉ*/
+#quiz-container { margin-top: 20px; }
+#progresso { font-weight: bold; }
+
+#alternativas {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+#alternativas button {
+    padding: 12px;
+    border: 1px solid var(--primary-color);
+    border-radius: 6px;
+    background-color: white;
+    cursor: pointer;
+    text-align: left;
+    font-size: 16px;
+}
+
+#alternativas button:hover { background-color: #e8edf2; }
+
+#alternativas button.correta {
+    background-color: #d4edda;
+    border-color: #2e7d32;
+    color: #1b5e20;
+}
+
+#alternativas button.errada {
+    background-color: #f8d7da;
+    border-color: #c62828;
+    color: #8e0000;
+}
+
+#alternativas button:disabled { cursor: default; }
+
+#feedback {
+    margin-top: 15px;
+    padding: 12px;
+    background-color: var(--bg-light);
+    border-radius: var(--border-radius);
+    font-weight: bold;
+}
+
+#proxima, #refazer {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#proxima { display: none; }
+#refazer { font-weight: bold; }
+#proxima:hover, #refazer:hover { background-color: var(--accent-color); }
+
+
+.destaque-inicio img {
+    width: 430px;
+    max-width: 48%;
+    height: auto;
+    border-radius: 8px;
+}
