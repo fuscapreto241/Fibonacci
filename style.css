@@ -68,7 +68,7 @@ main{
     margin: auto;
 }
 
-section {
+section{
     background-color: rgb(250, 247, 247);
     margin: 10px 0 30px;
     padding: 30px;
@@ -117,7 +117,7 @@ section {
     margin:auto;
 }
 .equacao{
-     max-width: 1000px;
+    max-width: 1000px;
     margin: 25px auto 0;
     display: flex;
     align-items: center;
@@ -125,8 +125,11 @@ section {
 }
 footer {
     background-color: #22035c;
-    min-height: 80px;
+    min-height: 90px;
     font-family: Arial, Helvetica, sans-serif;
+    margin-top: 40px;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 footer p {
@@ -212,6 +215,7 @@ article{
     color: white;
 }
 
+
 /*QUIZ*/
 /*COMPONENTE DO QUIZ E RODAPÉ*/
 #quiz-container { margin-top: 20px; }
@@ -277,4 +281,11 @@ article{
     max-width: 48%;
     height: auto;
     border-radius: 8px;
+}
+.texto-espiral {
+    background-color: white;
+    margin: 50px 0;
+    padding: 30px;
+    border-radius: 50px;
+    font-family: Arial, sans-serif;
 }
